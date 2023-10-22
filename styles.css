@@ -1,0 +1,265 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+
+
+
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700
+*/
+
+
+.attribution { 
+    font-size: 0.8rem; 
+    text-align: center;
+   
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+ }
+
+ :root {
+    /*### Neutral */
+--clr-Transparent: white;
+--clr-paragraphs: hsla(0, 0%, 100%, 0.75);
+--clr-Very-light: gray;
+--clr-bg-heads-btn:hsl(0, 0%, 95%);
+
+--clr-pr-org: hsl(31, 77%, 52%);
+--clr-pr-cyan: hsl(184, 100%, 22%);
+--clr-pr-dark-cyan: hsl(179, 100%, 13%);
+
+ }
+
+ *{
+    font-family: Big Shoulders Display sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ html{
+    font-size: 1rem;
+ }
+
+ body{
+    width:100vw; 
+    height:100vh; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center}
+
+ .container{
+    text-align: center;
+    margin:0%;
+    padding: 0%;
+ }
+ .cards{
+display: inline-flex;
+margin: 10rem 0;
+max-width: 38.5rem;
+width:100%;
+height: 30rem;
+display: flex;
+ }
+
+.sedans,
+.suvs,
+.luxury{
+   max-width: 5rem;
+}
+
+ .card1-title,
+ .card2-title,
+ .card3-title
+ {
+    text-transform: uppercase;
+    color: var(--clr-Transparent);
+    /* margin-left: 1rem;
+    text-align: start; */
+ }
+
+ p{
+    text-align: start;
+ }
+ 
+
+ .card-1{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+    background-color: var(--clr-pr-org);
+    background-color: var(--clr-pr-org);
+    color:var(--clr-Transparent);
+    height: 100%;
+    width: 100vw;
+    align-items: start;
+    
+    
+   
+ }
+ .card-2{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+    align-items: start;
+
+    background-color: var(--clr-pr-org);
+    background-color: var(--clr-pr-cyan);
+    color: var(--clr-paragraphs);
+     height: 100%;
+    width: 100vw;
+
+   
+ }
+ .card-3{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+    align-items: start;
+
+    background-color: var(--clr-pr-org);
+    background-color: var(--clr-pr-dark-cyan);
+    color: var(--clr-paragraphs);
+    /* height: 100%; */
+    width: 100vw;
+   
+ }
+
+.button1{
+border: 0.1rem solid  var(--clr-bg-heads-btn);
+border-radius: 4rem;
+background-color: var(--clr-Transparent);
+color: var(--clr-pr-org);
+
+}
+
+.button1{
+    border: 0.1rem solid  var(--clr-bg-heads-btn);
+    border-radius: 4rem;
+    background-color: var(--clr-Transparent);
+    color: var(--clr-pr-org);
+    padding: 0.3rem;
+    margin: 2rem;
+    
+    }
+    .button2{
+        border: 0.1rem solid  var(--clr-bg-heads-btn);
+        border-radius: 4rem;
+        background-color:var(--clr-Transparent);
+        color: var(--clr-pr-cyan);
+        padding: 0.3rem;
+        margin: 2rem;
+       
+        }
+        .button3{
+            border: 0.1rem solid  var(--clr-bg-heads-btn);
+            border-radius: 4rem;
+            background-color: var(--clr-paragraphs);
+            color: var(--clr-pr-dark-cyan);
+            padding: 0.3rem;
+            margin: 2rem;
+            }
+
+            span{
+                margin: 0.7rem;
+            }
+
+            @media(max-width: 375px){
+
+                *{
+                    font-family: Lexend Deca sans-serif;
+                 }
+                html{
+                    font-size: 15px;
+                }
+               
+                .container{
+                    display: flex;
+                    flex-direction: column;
+                    height: 39rem;
+                    width: 20rem;
+                }
+               
+                .cards{
+                   display: block;
+                    height: 20rem;
+                    width: 20rem;
+                    align-items: center;
+                }
+
+                .sedans,
+                .suvs,
+                .luxury{
+                 max-width: 3rem;
+                }
+
+                .card1-title,
+                .card2-title,
+                .card3-title
+                {
+                    font-size: 2rem; 
+                    padding: 1rem; 
+                }
+
+                p{
+                    text-align: start;
+                    font-size: 1rem; 
+                    padding: 1rem; 
+                }
+
+                .button1{
+                    margin: 0.5rem;
+                    padding: 0.5rem;
+                    }
+                    .button2{
+                        margin: 0.5rem;
+                        padding: 0.5rem;
+                        }
+                        .button3{
+                            margin: 0.5rem;
+                            padding: 0.5rem;
+                            }
+                 span{
+                     margin: 0.7rem;
+                     
+                            }
+
+                .attribution{
+                    margin-top: 28rem;
+                    font-display: flex;
+                }
+
+
+            }
+
